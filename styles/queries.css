@@ -1,0 +1,222 @@
+/* ======== tablet ========== */
+
+@media (max-width: 768px) {
+  .nav .menu-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: left;
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0.99);
+    transition: 1s;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+  .nav:hover .menu-container {
+    height: 32rem;
+    transition: 1s;
+  }
+
+  .nav {
+    background-color: var(--black);
+  }
+
+  .social-icons {
+    display: flex;
+    align-items: center;
+  }
+  .nav .menu-toggle {
+    display: flex;
+    width: 3rem;
+    height: 2rem;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-right: 2rem;
+  }
+  .nav .menu-toggle span {
+    height: 2px;
+    background-color: var(--light-gray);
+    border-radius: 50px;
+  }
+  .nav .menu-toggle:hover {
+    cursor: pointer;
+  }
+
+  .nav .menu-container li:not(:last-child) {
+    padding: 1rem 0;
+    border-bottom: solid 1px rgba(107, 107, 107, 0.514);
+    width: 100%;
+  }
+  .nav .menu-container li:last-child {
+    padding: 1rem 0;
+  }
+
+  .section-1 {
+    background-position: center;
+  }
+  .section-1 .header h2 {
+    font-size: 2.8rem;
+  }
+
+  .section-1 .header h1 {
+    font-size: 4.6rem;
+  }
+  .section-1 .header p {
+    font-size: 2rem;
+  }
+
+  .about-me .main-content {
+    flex-wrap: wrap;
+    padding: 0 4rem;
+  }
+  .about-me .main-content .description {
+    text-align: center;
+  }
+
+  .about-me .counter {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about-me .counter-item {
+    width: calc(50% - 2rem);
+    padding: 2rem;
+  }
+  .about-me .counter-item span {
+    font-size: 4rem;
+  }
+  .about-me .counter-item p {
+    font-size: 1.6rem;
+  }
+  .about-me .counter > :nth-child(odd) {
+    border-right: dotted 1px #ddd;
+  }
+  .about-me .counter > :nth-child(1),
+  .about-me .counter > :nth-child(2) {
+    border-bottom: dotted 1px #ddd;
+  }
+  .section-3 .section-content .item {
+    max-width: calc(100% - 1.5rem);
+  }
+  .section-4 .up-section,
+  .section-4 .down-section {
+    flex-wrap: wrap;
+  }
+  .section-4 .section-container {
+    width: 80%;
+    margin: auto;
+  }
+  .section-4 .up-section .content .description {
+    padding-right: 6rem;
+  }
+
+  .grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .grid-container {
+    width: calc(50% - 2rem);
+  }
+  .grid-container:last-child {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .section-6 .testimonials {
+    flex-wrap: wrap;
+    padding: 5rem;
+  }
+  .main-footer {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .main-footer .address li {
+    justify-content: center;
+  }
+  .footer-bottom .container {
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .section-4 .section-down-title {
+    padding-left: 6rem;
+  }
+
+  /****** components ******/
+
+  .section-heading p {
+    top: 28%;
+  }
+  .section-heading::after {
+    bottom: 35%;
+  }
+  .section-heading .heading-bg {
+    font-size: 10rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-1 .header h2 {
+    font-size: 2.8rem;
+  }
+
+  .section-1 .header h1 {
+    font-size: 3.8rem;
+  }
+  .section-1 .header p {
+    font-size: 2rem;
+  }
+
+  .sec-padding {
+    padding: 0.2rem;
+  }
+  .about-me .main-content {
+    padding: 0 2rem;
+  }
+  .about-me .main-content .description {
+    text-align: center;
+  }
+  .section-3 .section-content {
+    padding: 0 1rem;
+    justify-content: center;
+  }
+
+  .section-4 .section-container {
+    width: 95%;
+  }
+  .section-4 h3 {
+    padding: 1rem;
+  }
+  .section-4 .down-section {
+    gap: 0;
+  }
+  .grid {
+    justify-content: center;
+    padding: 2rem;
+  }
+  .grid-container {
+    width: 100%;
+  }
+  .section-6 .testimonials {
+    padding: 1rem;
+  }
+
+  .main-footer {
+    flex-direction: column-reverse;
+  }
+
+  /* components */
+
+  .section-heading p {
+    top: 20%;
+    font-size: 2.8rem;
+  }
+  .section-heading::after {
+    bottom: 50%;
+  }
+  .section-heading .heading-bg {
+    font-size: 7rem;
+  }
+}
